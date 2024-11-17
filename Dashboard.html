@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+       <meta charset="UTF-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <title>EcoCents</title>
+       <link rel="stylesheet" href="Dashboard.css">
+   </head>
+<body>
+   <div class="main-container">
+       <!-- navbar -->
+       <div class="navbar">
+           <div class="navbar-title">
+               <a href="Landing.html" class="landing-link"><strong>EcoCents</strong></a>
+           </div>
+           <div class="navbar-links">
+               <a href="Dashboard.html" class="navbar-link">Dashboard</a>
+               <a href="Profile.html" class="navbar-link">Settings</a>
+               <div class="login-button">
+                   <a href="Login.html">Login</a>
+               </div>
+           </div>
+       </div>
+       <div class="content-container">
+       <div class="header">
+        <!-- <h1>Dashboard</h1> -->
+        <div class="form-container">
+            <label for="costPerKWh">Cost per kWh (Energy): </label>
+            <input type="number" id="costPerKWh" placeholder="e.g., 0.15">
+            
+            <label for="costPerUnitWater">Cost per unit (Water): </label>
+            <input type="number" id="costPerUnitWater" placeholder="e.g., 0.002">
+            
+            <button id="applyCosts">Apply Costs</button>
+        </div>
+    </div>
+    
+    <div class="tabs">
+        <button class="tab-button" data-tab="energyConsumption">Energy Consumption</button>
+        <button class="tab-button water-tab-button" data-tab="waterConsumption">Water Consumption</button>
+
+    </div>
+
+    <div class="chart-container">
+        <canvas id="chart"></canvas>
+    </div>
+    <div class="average-costs">
+        <div class="average-item">
+            <h2>Average Monthly Energy Cost</h2>
+            <p id="averageEnergyCost">--</p>
+        </div>
+        <div class="average-item">
+            <h2>Average Monthly Water Cost</h2>
+            <p id="averageWaterCost">--</p>
+        </div>
+        <div id="efficiency-message" style="font-size: 18px; margin-top: 20px; color: #307473;"></div>
+    </div>
+    
+    <div id="carbon-footprint-container">
+        <button id="carbon-footprint-button">Calculate Carbon Footprint</button>
+        <div id="carbon-footprint-chart">
+            <canvas id="carbonChart"></canvas>
+        </div>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="dashboard.js"></script>
+       <!-- design -->
+       <!-- <div class="circle-one"></div>
+       <div class="circle-two"></div> -->
+   </div>
+   </div>
+</body>
+</html>
