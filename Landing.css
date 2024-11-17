@@ -1,0 +1,200 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+/* main */
+.main-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background: #F5F5F5;
+}
+
+/* navbar */
+.navbar {
+    width: 100%;
+    background-color: #AFCED4;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    box-sizing: border-box;
+    
+}
+
+
+.landing-link{
+    color: black;
+    font-size: 32px;
+    font-family: Inter, sans-serif;
+    font-weight: 700;
+    text-decoration: none;
+}
+.landing-link:hover {
+    color:#307473;
+}
+
+.navbar-links {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.navbar-link {
+    color: black;
+    font-size: 18px;
+    font-family: Inter, sans-serif;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.navbar-link:hover{
+    text-decoration: underline;
+}
+
+.login-button a {
+    padding: 10px 20px;
+    background-color: #307473;
+    color: white;
+    border-radius: 8px;
+    font-size: 16px;
+    font-family: Inter, sans-serif;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.login-button a {
+    padding: 10px 20px;
+    background-color: #307473;
+    color: white;
+    border-radius: 8px;
+    font-size: 16px;
+    font-family: Inter, sans-serif;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+/* design
+.circle-one,
+.circle-two {
+    position: absolute;
+    border-radius: 50%;
+}
+
+.circle-one {
+    width: 330px;
+    height: 450px;
+    left: 100px;
+    top: 100px;
+    background: linear-gradient(180deg, rgba(134, 204, 168, 0.5) 0%, rgba(48, 116, 115, 0.5) 40%);
+    transform: rotate(-60deg);
+}
+
+.circle-two {
+    width: 300px;
+    height: 450px;
+    right: 130px;
+    bottom: 300px;
+    background: linear-gradient(180deg, rgba(99, 159, 171, 0.75) 25%, rgba(175, 206, 212, 0.75) 100%);
+    transform: rotate(110deg);
+
+} */
+
+/* welcome */
+.welcome-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+    z-index: 1;
+    background-image: url('Design.png');
+    background-size: contain;
+    background-color: #F5F5F5;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.welcome-text .main-title {
+    font-family: Inter, sans-serif;
+    font-weight: 700;
+    color: black;
+}
+
+.main-title {
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+.welcome-text .sub-title {
+    font-family: Inter, sans-serif;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.75);
+    margin-bottom: 30px;
+}
+
+.sub-title {
+    font-size: 20px;
+}
+.get-started-button {
+    background-color: #307473;
+    color: white;
+    padding: 10px 20px;
+    font-size: 20px;
+    font-family: Inter, sans-serif;
+    font-weight: 500;
+    border-radius: 10px;
+    text-decoration: none;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+
+/* about */
+.about-section {
+    text-align: center;
+    padding: 80px 20px;
+    background-color: #AFCED4;
+}
+
+.about-title {
+    font-size: 36px;
+    font-family: Inter, sans-serif;
+    font-weight: 600;
+    color: black;
+    margin-top: 0px;
+    margin-bottom: 40px;
+}
+
+.about-description {
+    font-size: 20px;
+    font-family: Zen Kaku Gothic New, sans-serif;
+    font-weight: 500;
+    color: #307473;
+}
+
+/* footer */
+.footer {
+    text-align: center;
+    background-color: #F5F5F5;
+    padding: 10px 20px;
+    margin-top: auto;
+}
+
+.footer-line {
+    height: 1px;
+    margin: 10px auto;
+    background-color: #E6E6E6;
+}
+
+.footer-text {
+    font-size: 14px;
+    font-family: Judson, serif;
+    font-weight: 400;
+    color: black;
+    line-height: 1.5;
+}

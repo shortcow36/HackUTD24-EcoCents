@@ -1,0 +1,164 @@
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow-x: hidden;
+    font-family: 'Inter', sans-serif;
+    background: #F5F5F5;
+}
+
+/* main container */
+.main-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* navbar */
+.navbar {
+    width: 100%;
+    background-color: #AFCED4;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    box-sizing: border-box;
+}
+
+.landing-link {
+    color: black;
+    font-size: 32px;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.landing-link:hover {
+    color: #307473;
+}
+
+.navbar-links {
+    display: flex;
+    gap: 20px;
+}
+
+.navbar-link {
+    color: black;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.navbar-link:hover{
+    text-decoration: underline;
+}
+
+.login-button a {
+    background-color: #307473;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+}
+
+/* content */
+.content {
+    flex-grow: 1;
+    padding: 20px 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+/* title and instructions */
+.instructions {
+    text-align: left;
+}
+
+.instructions h1 {
+    font-size: 48px;
+    font-weight: 700;
+    color: black;
+    margin-bottom: 10px;
+}
+
+.instructions p {
+    font-size: 15px;
+    color: black;
+}
+
+/* sosts */
+.cost-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background: #AFCED4;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.cost-per {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.cost-input {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+}
+
+p {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.input-box {
+    width: 200px;
+    height: 40px;
+    background-color: #307473;
+    border: 1px solid #307473;
+    border-radius: 8px;
+    padding: 2px;
+    color: #AFCED4;
+    font-size: 20px;
+}
+
+/* bottom */
+.bottom-section {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.light-settings, .thermostat {
+    background: #AFCED4;
+    border-radius: 15px;
+    padding: 20px;
+    flex: 1;
+    text-align: center;
+}
+
+.light-settings h2, .thermostat h2 {
+    font-size: 32px;
+    color: black;
+    margin-bottom: 50px;
+}
+
+.turn-on, .turn-off, .temperature-info, .humidity-info {
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+.button {
+    width: 150px;
+    height: 40px;
+    background-color: #307473;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
