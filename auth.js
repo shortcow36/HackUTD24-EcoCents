@@ -1,10 +1,10 @@
-var firebaseConfig = {
-    apiKey: "AIzaSyB_OFz8V50Pup8tfZBZ7ygO605RZ3rPBUM",
-    authDomain: "ecocents-e073c.firebaseapp.com",
-    projectId: "ecocents-e073c",
-    storageBucket: "ecocents-e073c.appspot.com",
-    messagingSenderId: "451736042816",
-    appId: "1:451736042816:web:114124d486b0cbeea2cea5"
+const firebaseConfig = {
+    apiKey: process.env.REACT_APP_API_KEY,
+    authDomain: process.env.REACT_APP_AUTH_DOMAIN,
+    projectId: process.env.REACT_APP_PROJECT_ID,
+    storageBucket: process.env.REACT_APP_STORAGE_BUCKET,
+    messagingSenderId: process.env.REACT_APP_MESSAGING_SENDER_ID,
+    appId: process.env.REACT_APP_APP_ID
 };
 
 firebase.initializeApp(firebaseConfig);
