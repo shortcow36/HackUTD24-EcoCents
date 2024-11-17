@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoCents</title>
+    <link rel="stylesheet" href="Profile.css">
+</head>
+<body>
+    <div class="main-container">
+        <!-- navbar -->
+        <div class="navbar">
+            <div class="navbar-title">
+                <a href="Landing.html" class="landing-link"><strong>EcoCents</strong></a>
+            </div>
+            <div class="navbar-links">
+                <a href="Dashboard.html" class="navbar-link">Dashboard</a>
+                <a href="Profile.html" class="navbar-link">Settings</a>
+                <div class="login-button">
+                    <a href="Login.html">Login</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- content -->
+        <div class="content">
+            <!-- title and instructions -->
+            <div class="instructions">
+                <h1>Building Conditions</h1>
+                <p>Enter cost information. </br>Select the time frame to turn building lights off. </br>Monitor building temperature.</p>
+            </div>
+
+            <!-- Costs-->
+            <div class="cost-section">
+                <div class="cost-per">
+                    <p for="cost-kwh"><strong>Cost Per kWh:</strong></p>
+                    <p for="cost-water"><strong>Cost Per Water Gallon:</strong></p>
+                </div>
+                <div class="cost-input">
+                    <input type="text" id="cost-kwh" class="input-box">
+                    <input type="text" id="cost-water" class="input-box">
+                </div>
+            </div>
+
+            <!-- bottom -->
+            <div class="bottom-section">
+                <!-- light settings -->
+                <div class="light-settings">
+                    <h2>Light Settings</h2>
+                    <div class="turn-on">
+                        <label>Turn ON:</label>
+                        <input type="text" class="input-box">
+                    </div>
+                    <div class="turn-off">
+                        <label>Turn OFF:</label>
+                        <input type="text" class="input-box">
+                    </div>
+                </div>
+
+                <!-- thermostat -->
+                <div class="thermostat">
+                    <h2>Thermostat</h2>
+                    <div class="temperature-info">
+                        <label>Temperature:</label>
+                        <input type="text" class="input-box">
+                    </div>
+                    <div class="humidity-info">
+                        <label>Humidity:</label>
+                        <input type="text" class="input-box">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
