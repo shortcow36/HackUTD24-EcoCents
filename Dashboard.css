@@ -275,3 +275,18 @@ label {
     background-color:#307473;
 }
 
+.advice {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+    z-index: 1;
+    margin-top: 20px;
+    background-image: url('Group6.png');
+    background-size: contain;
+    background-color: #F5F5F5;
+    background-position: center;
+    background-repeat: no-repeat;
+}

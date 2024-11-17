@@ -1,11 +1,8 @@
-var firebaseConfig = {
-    apiKey: "AIzaSyB_OFz8V50Pup8tfZBZ7ygO605RZ3rPBUM",
-    authDomain: "ecocents-e073c.firebaseapp.com",
-    projectId: "ecocents-e073c",
-    storageBucket: "ecocents-e073c.appspot.com",
-    messagingSenderId: "451736042816",
-    appId: "1:451736042816:web:114124d486b0cbeea2cea5"
-};
+const firebase = require('firebase/app'); 
+require('firebase/auth'); 
+require('firebase/firestore');
+const firebaseConfig = { apiKey: process.env.FIREBASE_API_KEY, authDomain: process.env.FIREBASE_AUTH_DOMAIN, projectId: process.env.FIREBASE_PROJECT_ID, storageBucket: process.env.FIREBASE_STORAGE_BUCKET, messagingSenderId: process.env.FIREBASE_MESSAGING_SENDER_ID, appId: process.env.FIREBASE_APP_ID };
+
 
 firebase.initializeApp(firebaseConfig);
 
